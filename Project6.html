@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			background-color: #269ed9;
+		}
+		h3{
+			text-align: center;
+		}
+		p{
+			background: crimson;
+			display: inline-flex;
+			margin-left: 220px;
+		}
+		textarea{
+			position: relative;
+			bottom: 100px;
+			margin-left: 240px;
+		}
+		textarea:focus,blur{
+			color: red;
+			background-color: #33e22a1a;
+		}
+
+		
+
+	</style>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("demo");
+                x.innerHTML = "Hello World";
+                x.style.backgroundColor= "red";
+                x.style.marginLeft= "220px";
+            }
+            function myFunc(){
+                var y=document.getElementById("fname");
+                y.style.color="red";
+                y.value = y.value.toUpperCase();
+            }
+            function mOver(obj){
+                obj.innerHTML = "Release Me";
+            }
+            function mOut(obj){
+                obj.innerHTML = "Thank You";
+                obj.style.backgroundColor = "#3333333";
+            }
+            function mDown(obj) {
+                obj.style.backgroundColor = "#6666666";
+                obj.innerHTML = "Release Me";
+       }
+           function mUp(obj) {
+                obj.style.backgroundColor="#5555555";
+                obj.innerHTML="Thank You Idiot";
+       }
+    </script>
+</head>
+<body>
+	<h3>There are many events among them some are done here</h3>
+	<button onclick="myFunction()">OnClick Event</button>
+	<span id="demo">I am span!</span>
+	</br></br></br>
+	
+  	<label>Enter your name:</label> <input type="text" id="fname" placeholder="Name please and Hit Enter" onchange="myFunc()">
+  	
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: #31e14d; width:130px; height: 130px; margin-top: 40px; padding: 20px; text-align: center;">
+  	Mouse Over and Out</div>
+  	
+  	<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+	style="background-color:#ccf04d;width:130px;height:130px;padding:20px; margin-top: 5px; text-align:center; ">
+	Mouse Down and Up</div>
+	
+	<strong style="position: relative; bottom: 110px; margin: 240px; ">Write about yourself:</strong></br>
+	<textarea id="diff" name="diff" rows="5" cols="20" placeholder="write here...."></textarea>
+	
+</body>
+</html>

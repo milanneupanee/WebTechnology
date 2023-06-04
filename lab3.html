@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Third</title>
+    <style>
+        body {
+             color: #9b2335;
+            background-color: #dfcfbe;
+        }
+        table , th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+      
+        td {
+            padding: 6px;
+         
+        }
+        .submit{
+            position: relative;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Objective:</strong>To design registration form within the table and mapping image</p>
+    <center>
+        <table>
+        
+            <tr>
+                <th colspan="2">Create new account</th>
+            </tr>
+      <tr>
+        <td>Name:</td>
+        <td><form action="Username">
+            <input type="text"required>
+        </form></td>
+      </tr>
+      <tr>
+        <td>Username:</td>
+        <td><form action="">
+            <input type="text" required>
+        </form></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><form action="">
+            <input type="text" required>
+        </form></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td><form action="">
+            <input type="radio" name="gender" id="" >Male
+            <input type="radio" name="gender" id="">Female
+            <input type="radio" name="gender" id="">Others
+        </form></td>
+      </tr>
+      <tr>
+        <td>Subjects</td>
+        <td><form action="">
+            <input type="checkbox" name="Math" id="" required>Math
+            <input type="checkbox" name="C" id=""required>C
+            <input type="checkbox" name="C++" id=""required>C++
+        </form></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><form action="">
+            <input type="password" name="pass" id="" required>
+        </form></td>
+      </tr>
+      <tr>
+        <td>Confirm password:</td>
+        <td><form action="">
+            <input type="password" name="confirm password" id=""required>
+        </form> </td>
+      </tr>
+      
+        <tr>
+            <td colspan="2" class="submit"><form action="">
+                <input type="submit" value="Submit">
+            </form></td>
+            
+          </tr>
+      
+     
+    </table>
+    </center>
+    <p>Image map is to define map with clickable areas. Following image is used as image map. So you need to do this by yourself</p>
+    <img src="darahara.jpg" usemap="#let-map" alt="Picture of Darahara">
+    <map name="let-map">
+         <area shape="circle" coords="300,200,10" href="" alt="">
+    </map>
+</body>
+</html>
